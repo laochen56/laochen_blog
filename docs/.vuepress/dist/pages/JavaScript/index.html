@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js | 老陈笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <script src="/js/pet.js"></script>
+    <script src="/js/base.js"></script>
+    <meta name="description" content="记录前端笔记">
+    <meta name="keywords" content="老陈笔记,前端,前端笔记">
+    
+    <link rel="preload" href="/assets/css/0.styles.4c2d83b0.css" as="style"><link rel="preload" href="/assets/js/app.0659193c.js" as="script"><link rel="preload" href="/assets/js/2.defd1617.js" as="script"><link rel="preload" href="/assets/js/25.d7014b52.js" as="script"><link rel="prefetch" href="/assets/js/10.b406481c.js"><link rel="prefetch" href="/assets/js/11.ee93488e.js"><link rel="prefetch" href="/assets/js/12.dd71ecad.js"><link rel="prefetch" href="/assets/js/13.8246391e.js"><link rel="prefetch" href="/assets/js/14.31744590.js"><link rel="prefetch" href="/assets/js/15.ec37bc38.js"><link rel="prefetch" href="/assets/js/16.bca702bb.js"><link rel="prefetch" href="/assets/js/17.7af1c970.js"><link rel="prefetch" href="/assets/js/18.5c3ce465.js"><link rel="prefetch" href="/assets/js/19.74700f1d.js"><link rel="prefetch" href="/assets/js/20.af54251e.js"><link rel="prefetch" href="/assets/js/21.5b6b678f.js"><link rel="prefetch" href="/assets/js/22.4ad15bef.js"><link rel="prefetch" href="/assets/js/23.bd92fd36.js"><link rel="prefetch" href="/assets/js/24.2cfd46ec.js"><link rel="prefetch" href="/assets/js/26.a18721a3.js"><link rel="prefetch" href="/assets/js/27.e56e1a26.js"><link rel="prefetch" href="/assets/js/28.3224ca76.js"><link rel="prefetch" href="/assets/js/29.3092b8ae.js"><link rel="prefetch" href="/assets/js/3.f012088e.js"><link rel="prefetch" href="/assets/js/30.ad5b07be.js"><link rel="prefetch" href="/assets/js/31.c542654d.js"><link rel="prefetch" href="/assets/js/4.93b7e9c0.js"><link rel="prefetch" href="/assets/js/5.e17b829f.js"><link rel="prefetch" href="/assets/js/6.d9cebfb4.js"><link rel="prefetch" href="/assets/js/7.592497c0.js"><link rel="prefetch" href="/assets/js/8.0410771d.js"><link rel="prefetch" href="/assets/js/9.f0fe3c9c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4c2d83b0.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/favicon.ico" alt="老陈笔记" class="logo"> <span class="site-name can-hide">老陈笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习" class="dropdown-title"><!----> <span class="title" style="display:;">学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/HTML/html.html" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/pages/CSS/css2.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/pages/JavaScript/js.html" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/pages/JavaScript/es6.html" class="nav-link">ES6</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/vue2.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/Expand/expand1.html" class="nav-link">前端八股文</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="资源列表" class="dropdown-title"><!----> <span class="title" style="display:;">资源列表</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://wangdoc.com/es6/intro.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v2.cn.vuejs.org/v2/guide" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://react.docschina.org/tutorial/tutorial.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.net.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uniapp
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.reactnative.cn/docs/getting-started" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ReactNative
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  菜鸟教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v3.bootcss.com/getting-started/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Bootstrap
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://element.eleme.io/#/zh-CN/component/installation" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Element
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://element-plus.gitee.io/zh-CN/guide/design.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Element-plus
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.uviewui.com/components/intro.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uview
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.bootcdn.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  BootCDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.axios-http.cn/docs/example" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Axios
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://nodejs.cn/learn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ant
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://flutter.cn/docs/get-started/install" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  阿里图标
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/introduction" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信小程序
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/guide.html" class="nav-link">导航网站</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="人生感悟" class="dropdown-title"><!----> <span class="title" style="display:;">人生感悟</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Life/alive.html" class="nav-link">活着</a></li><li class="dropdown-item"><!----> <a href="/Life/meaning_of_life.html" class="nav-link">人生的意义</a></li><li class="dropdown-item"><!----> <a href="/Life/lifetime.html" class="nav-link">人生格言</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><!----> <span class="title" style="display:;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li><li class="dropdown-item"><!----> <a href="/show/" class="nav-link">展示</a></li></ul></div></div><div class="nav-item"><a href="http://www.weblearn.fit/AAA/message_board" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言板
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="下载" class="dropdown-title"><!----> <span class="title" style="display:;">下载</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-2b5692dd-39ab-498e-b867-9a220d2bb2f2/b79da484-fe1f-42da-855b-96831a7f41ff.apk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  app安卓精简版
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-2b5692dd-39ab-498e-b867-9a220d2bb2f2/5cc6ae73-c06e-49ae-a7a6-fcccdcc31524.apk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  app安卓用户版
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="仓库" class="dropdown-title"><!----> <span class="title" style="display:;">仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/old-chen-next-door/lao-chens-front-end-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/laochen56/laochen_blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习" class="dropdown-title"><!----> <span class="title" style="display:;">学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/HTML/html.html" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/pages/CSS/css2.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/pages/JavaScript/js.html" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/pages/JavaScript/es6.html" class="nav-link">ES6</a></li><li class="dropdown-item"><!----> <a href="/pages/Vue/vue2.html" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/pages/Expand/expand1.html" class="nav-link">前端八股文</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="资源列表" class="dropdown-title"><!----> <span class="title" style="display:;">资源列表</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://wangdoc.com/es6/intro.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ES6
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v2.cn.vuejs.org/v2/guide" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Vue
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://react.docschina.org/tutorial/tutorial.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  React
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://uniapp.dcloud.net.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uniapp
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.reactnative.cn/docs/getting-started" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ReactNative
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  菜鸟教程
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://v3.bootcss.com/getting-started/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Bootstrap
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://element.eleme.io/#/zh-CN/component/installation" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Element
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://element-plus.gitee.io/zh-CN/guide/design.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Element-plus
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.uviewui.com/components/intro.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  uview
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.bootcdn.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  BootCDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.axios-http.cn/docs/example" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Axios
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://nodejs.cn/learn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Node
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ant
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://flutter.cn/docs/get-started/install" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Flutter
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  阿里图标
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://developers.weixin.qq.com/miniprogram/introduction" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微信小程序
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/guide.html" class="nav-link">导航网站</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="人生感悟" class="dropdown-title"><!----> <span class="title" style="display:;">人生感悟</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Life/alive.html" class="nav-link">活着</a></li><li class="dropdown-item"><!----> <a href="/Life/meaning_of_life.html" class="nav-link">人生的意义</a></li><li class="dropdown-item"><!----> <a href="/Life/lifetime.html" class="nav-link">人生格言</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><!----> <span class="title" style="display:;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li><li class="dropdown-item"><!----> <a href="/show/" class="nav-link">展示</a></li></ul></div></div><div class="nav-item"><a href="http://www.weblearn.fit/AAA/message_board" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言板
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="下载" class="dropdown-title"><!----> <span class="title" style="display:;">下载</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-2b5692dd-39ab-498e-b867-9a220d2bb2f2/b79da484-fe1f-42da-855b-96831a7f41ff.apk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  app安卓精简版
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-2b5692dd-39ab-498e-b867-9a220d2bb2f2/5cc6ae73-c06e-49ae-a7a6-fcccdcc31524.apk" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  app安卓用户版
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="仓库" class="dropdown-title"><!----> <span class="title" style="display:;">仓库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/old-chen-next-door/lao-chens-front-end-notes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/laochen56/laochen_blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/JavaScript/" aria-current="page" class="active sidebar-link">JavaScript简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#语法基础" class="sidebar-link">语法基础</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#流程控制" class="sidebar-link">流程控制</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#函数" class="sidebar-link">函数</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#数组" class="sidebar-link">数组</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#内置对象" class="sidebar-link">内置对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/JavaScript/#_1-字符串对象-string" class="sidebar-link">（1）字符串对象：String</a></li><li class="sidebar-sub-header level3"><a href="/pages/JavaScript/#_2-日期对象-date" class="sidebar-link">（2）日期对象：Date</a></li><li class="sidebar-sub-header level3"><a href="/pages/JavaScript/#_3-数学对象-math" class="sidebar-link">（3）数学对象：Math</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#dom篇" class="sidebar-link">DOM篇</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#bom篇" class="sidebar-link">BOM篇</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#事件处理" class="sidebar-link">事件处理</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#this指向" class="sidebar-link">this指向</a></li><li class="sidebar-sub-header level2"><a href="/pages/JavaScript/#拓展建议" class="sidebar-link">拓展建议</a></li></ul></li><li><a href="/pages/30f9ae/" class="sidebar-link">ES6简介</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端八股文</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=pages" title="分类" data-v-06225672>pages</a></li><li data-v-06225672><a href="/categories/?category=JavaScript" title="分类" data-v-06225672>JavaScript</a></li></ul> <div class="info" data-v-06225672><!----> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-09-01</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">js<!----></h1> <!----> <div class="theme-vdoing-content content__default"><p>  JavaScript（通常缩写为JS）是一种高级的、解释型的编程语言。JavaScript是一门基于原型、函数先行的语言，是一门多范式的语言，它支持面向对象编程，命令式编程，以及函数式编程。它提供语法来操控文本、数组、日期以及正则表达式等，不支持I/O，比如网络、存储和图形等，但这些都可以由它的宿主环境提供支持。它已经由ECMA（欧洲电脑制造商协会）通过ECMAScript实现语言的标准化。它被世界上的绝大多数网站所使用，也被世界主流浏览器（Chrome、IE、Firefox、Safari、Opera）支持。</p> <p>  一般使用JavaScript有3种方式，外部引入<code>&lt;script src=''xxx.js&quot;&gt;&lt;/script&gt;</code>，内部<code>&lt;script&gt;&lt;/script&gt;</code>标签和内部元素标签使用，例如：<code>&lt;button οnclick=&quot;alert('javascript的使用')&quot;&gt;</code>。</p> <p>一个简单的JavaScript程序:</p> <div class="language- extra-class"><pre><code>  &lt;script&gt;window.onload = function () { alert(&quot;老陈笔记&quot;); }&lt;/script&gt;
+</code></pre></div><h2 id="语法基础"><a href="#语法基础" class="header-anchor">#</a> 语法基础</h2> <p>1、变量与常量
+在JavaScript中，变量指的是一个可以改变的量。变量类似数学的变量，但用法和语法不同。</p> <ul><li><p>变量名字需要使用者定义命名来灵活使用。</p></li> <li><p>在JavaScript中，给一个变量命名，我们需要遵循以下两个方面的原则。</p></li></ul> <p> （1）变量由字母、下划线、$或数字组成，并且第一个字母必须是“字母、下划线或$”。</p> <p> （2）变量不能是系统关键字和保留字。
+语法 例如：  var 变量名 = 值；</p> <p>2、数据类型</p> <p> 在JavaScript中，基本数据类型：字符串（String）、数字(Number)、布尔(Boolean)、空（Null）、未定义（Undefined）、Symbol。</p> <p> 对象类型：对象(Object)、数组(Array)、函数(Function)，还有两个特殊的对象：正则（RegExp）和日期（Date）。</p> <p>3、运算符</p> <table><thead><tr><th>运算符</th> <th>说明</th> <th>举例</th></tr></thead> <tbody><tr><td>+</td> <td>加</td> <td>10+5 //返回15</td></tr> <tr><td>－</td> <td>减</td> <td>10-5 //返回5</td></tr> <tr><td>*</td> <td>乘</td> <td>10*5 //返回50</td></tr> <tr><td>/</td> <td>除</td> <td>10/5 //返回2</td></tr> <tr><td>%</td> <td>求余</td> <td>10%4 //返回2</td></tr> <tr><td>++</td> <td>自增</td> <td>var i=10;i++; //返回11</td></tr> <tr><td>--</td> <td>自减</td> <td>var i=10;i--; //返回9</td></tr> <tr><td>&gt;</td> <td>大于</td> <td>2&gt;1   //返回true</td></tr> <tr><td>&lt;</td> <td>小于</td> <td>2&lt;1    //返回false</td></tr> <tr><td>&gt;=</td> <td>大于等于</td> <td>2&gt;=2   //返回true</td></tr> <tr><td>&lt;=</td> <td>小于等于</td> <td>2&lt;=2   //返回true</td></tr> <tr><td>==</td> <td>等于</td> <td>1==2   //返回false</td></tr> <tr><td>!=</td> <td>不等于</td> <td>1!=2    //返回true</td></tr></tbody></table> <p>逻辑运算符:<code>&amp;&amp;“与”运算; ||	“或”运算; !“非”运算</code></p> <p>tips:数字 + 数字 = 数字;<br>
+  字符串 + 字符串 = 字符串;<br>
+  字符串 + 数字 = 字符串。</p> <p>4、表达式与语句</p> <p>一个表达式包含“操作数”和“操作符”两部分。操作数可以是变量，也可以是常量。操作符指的就是之前学的运算符。每一个表达式都会产生一个值。</p> <p>例如：var a =  8+9（8+9是一个表达式）而整一句代码<b>var a=8+9 </b>就是一个语句了</p> <p>5、类型转换</p> <p>类型转换有2种，隐式类型转换和显式类型转换；隐式类型转换，指的是JavaScript自动进行的类型转换。显式类型转换，指的是需要我们手动用代码强制进行的类型转换。</p> <p>例如：</p> <div class="language- extra-class"><pre class="language-text"><code>字符串转数字，隐式转换：var res = 123+&quot;abc&quot;
+
+显示转换：var res =  Number(&quot; 123 &quot;)
+</code></pre></div><p><code>tips: console.log(typeof res)判断res数据类型。</code></p> <h2 id="流程控制"><a href="#流程控制" class="header-anchor">#</a> 流程控制</h2> <p>  流程控制，是任何一门编程语言都有的一个语法，指的是控制程序按照怎样的顺序执行的。</p> <p>  在JavaScript中，共有3种流程控制方式</p> <p>1、<b>顺序结构</b>；在JavaScript中，顺序结构是最基本的结构。所谓的顺序结构，说白了，就是代码按照从上到下、从左到右的“顺序”执行。</p> <p>2、<b>选择结构</b>；在JavaScript中，选择结构指的是根据“条件判断”来决定使用哪一段代码。选择结构有3种：单项选择、双项选择以及多项选择，但是无论是哪一种，JavaScript都只会执行其中的一个分支。</p> <p>3、<b>循环结构</b>；指的是根据条件来判断是否重复执行某一段程序。若条件为true，则继续循环；若条件为false，则退出循环。</p> <p>  顺序结构是js默认的执行方式这里就不说了，说一下选择结构和循环结构吧。</p> <p><b>选择结构</b>；共有两种方式：一种是if语句；另外一种是switch语句。</p> <ul><li>对于if语句，主要包括以下要点：</li></ul> <p>（1）单项选择：if…</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>if(条件)
+{
+……
+}
+</code></pre></div><p>（2）双项选择：if…else…</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>if(条件)
+{
+    ……
+}
+else
+{
+    ……
+}
+</code></pre></div><p>（3）多项选择：if…else if…else…</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>if(条件1)
+{
+    //当条件1为true时执行的代码
+}
+else if(条件2)
+{
+    //当条件2为true时执行的代码
+}
+else
+{
+    //当条件1和条件2都为false时执行的代码
+}
+</code></pre></div><p>（4）if语句的嵌套</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>if(条件1)
+{
+    if(条件2)
+    {
+        当“条件1”和“条件2”都为true时执行的代码
+    }
+    else
+    {
+        当“条件1”为true、“条件2”为false时执行的代码
+    }
+}
+else
+{
+    if(条件2)
+    {
+        当“条件1”为false、“条件2”为true时执行的代码
+    }
+    else
+    {
+        当“条件1”和“条件2”都为false时执行的代码
+    }
+}
+</code></pre></div><ul><li>对于switch语句：</li></ul> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>switch(判断值)
+{
+    case 取值1:
+        语块1;break;
+    case 取值2:
+        语块2;break;
+    ……
+    case 取值n:
+        语块n;break;
+    default:
+        语句块n+1;
+}
+</code></pre></div><p>说明：switch是“开关”，case是“情况”，break是“断开”，default是“默认”。switch语句会根据“判断值”来判断，然后来选择使用哪一个case。如果每一个case的取值都不符合，那就执行default的语句。</p> <p>tips：switch里通常会结合continue/break来使用；continue是跳过本条case，继续执行下一个；而break是执行本case后终止不再执行下一条。</p> <p><b>循环结构</b>；共有三种方式：分别是while语句、do…while语句和for语句。</p> <ul><li>while语句</li></ul> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>while(条件)
+{
+    //当条件为true时，循环执行
+}
+</code></pre></div><p>说明：如果“条件”返回为true，则会执行大括号{}内部的程序。当执行完大括号{}内部的程序后，会再次判断“条件”。
+如果条件依旧还是true，则会继续重复执行大括号中的程序……循环执行直到条件为false才结束整个循环，然后再接着执行while语句后面的程序。</p> <ul><li>do…while语句</li></ul> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>do
+{
+    ……
+}while(条件);
+</code></pre></div><p>说明：
+do…while语句首先是无条件执行循环体一次，然后再判断是否符合条件。如果符合条件，则重复执行循环体；如果不符合条件，则退出循环。</p> <p>do…while语句跟while语句是非常相似的，并且任何一个都可以转换成等价的另外一个。</p> <p>do…while语句结尾处括号后有一个分号（;），该分号一定不能省略，这是初学者最容易忽略的一点。</p> <ul><li>for语句</li></ul> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>for(初始化表达式; 条件表达式; 循环后操作)
+{
+    ……
+}
+</code></pre></div><p>说明：在for循环中，首先定义一个用于计数的变量i，其中设i的初始值为0。然后定义一个判断条件i&lt;n；
+只要i小于n就会执行for循环中的程序。最后定义一个循环后的表达式i++，也就是说，每次循环之后都会进行一次i++。</p> <h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <p>  为了减轻重复编码的负担，JavaScript引入了函数的概念。函数一般是在两种种情况下使用：一种是“重复使用的功能”，另外一种是“特定的功能”。</p> <p>1、在JavaScript中，如果我们想要使用函数，一般只需要简单的2步；定义函数和调用函数。</p> <p>（1）定义函数</p> <ul><li><p>定义没有返回值的函数</p> <p> 语法：</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>function 函数名(参数1 , 参数2 ,..., 参数n)
+{
+    ……
+}
+</code></pre></div><ul><li>定义有返回值的函数</li></ul> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>function 函数名(参数1 , 参数2 ,..., 参数n)
+{
+    ……
+    return 返回值;
+}
+</code></pre></div><p>tips：根据作用域，变量可以分为以下2种，全局变量和局部变量。</p> <p>  全局变量一般在主程序中定义，其有效范围是从定义开始，一直到整个程序结束为止。说白了，全局变量在任何地方都可以用。</p> <p>  局部变量一般在函数中定义，其有效范围只限于在函数之中，函数执行完了就没了。说白了，局部变量只能在函数中使用，函数之外是不能使用函数之内定义的变量的。</p> <p>（2）调用函数</p> <ul><li>直接调用</li></ul> <p> 语法：</p> <div class="language- extra-class"><pre><code>函数名(实参1, 实参2, ... , 实参n);
+</code></pre></div><ul><li><p>在表达式中调用</p> <p>  在表达式中调用，一般用于“有返回值的函数”，然后函数的返回值会参与表达式的计算。</p></li></ul> <p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code>function addSum(a, b) 
+        {
+            var sum = a + b;
+            return sum;
+        }
+        //调用函数
+        var n = addSum(1, 2) + 100;
+</code></pre></div><ul><li><p>在超链接中调用</p> <p>  当用户点击超链接时，就会调用该函数。</p></li></ul> <p> 语法：</p> <div class="language- extra-class"><pre><code>&lt;a href=&quot;javascript:函数名&quot;&gt;&lt;/a&gt;
+</code></pre></div><ul><li>在事件中调用</li></ul> <p>  鼠标移动是一个事件、鼠标单击也是一个事件，类似的事件很多。当一个事件产生的时候，我们就可以调用某个函数来针对这个事件作出响应。</p> <p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code> &lt;script&gt;
+        function test()
+        {
+            alert(&quot;函数被调用了~&quot;);
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button onclick= &quot;test()&quot;&gt;点击按钮&lt;/button&gt;
+&lt;/body&gt;
+
+</code></pre></div><p>2、内置函数</p> <table><thead><tr><th>函数</th> <th>说明</th></tr></thead> <tbody><tr><td>parseInt()</td> <td>提取字符串中的数字，只限提取整数</td></tr> <tr><td>parseFloat()</td> <td>提取字符串中的数字，可以提取小数</td></tr> <tr><td>isFinite()</td> <td>判断某一个数是否是一个有限数值</td></tr> <tr><td>isNaN()</td> <td>判断一个数是否是NaN值</td></tr> <tr><td>escape()</td> <td>对字符串进行编码</td></tr> <tr><td>unescape()</td> <td>对字符串进行解码</td></tr> <tr><td>eval()</td> <td>把一个字符串当做一个表达式一样去执行</td></tr></tbody></table> <h2 id="数组"><a href="#数组" class="header-anchor">#</a> 数组</h2> <p>  数组，就是将多个元素（通常是同一类型）按一定顺序排列放到一个集合中，那么这个集合我们就称之为数组。</p> <p>  数组就类似一个储物柜，储物柜有按顺序排好的小储物箱，每个小储物箱都有一个序号，可以放置很多东西，同时我们也可以按照序号取东西出来。</p> <p>一、<b>创建数组的4种方法：</b></p> <p>1、自面量创建 var arr = [ ];</p> <p>2、构造函数方法创建数组，new一个数组创建 var arr = new Array();</p> <p>3、也是采用构造函数创建数组对象，不过设置了初始长度：var arr = new Array(5);</p> <p>4、也是采用构造函数创建数组对象，且在创建的同时给它赋予了初始值“5”：
+var arr = new Array(&quot;5&quot;);</p> <p>二、<b>数组的获取</b></p> <p>  想要获取数组某一项的值，我们都是使用“下标”的方式来获取。</p> <p>注意：数组的下标是从0开始的，而不是从1开始的</p> <p>例子：</p> <div class="language- extra-class"><pre><code>var arr = [&quot;HTML&quot;,&quot;CSS&quot;, &quot;JavaScript&quot;];
+</code></pre></div><p><code>arr[0]</code>表示获取第1项的值&quot;HTML&quot;。<code>arr[1]</code>表示获取第2项的值&quot;CSS&quot;，以此类推。</p> <p>tips:可以使用length属性来获取数组的长度。语法<code>数组名.length</code>。</p> <p>三、<b>数组方法</b></p> <p>   常见的数组方法如下表：</p> <table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>push</td> <td>往数组最后一个位置追加元素</td></tr> <tr><td>unshift</td> <td>往数组第一个位置追加元素</td></tr> <tr><td>pop</td> <td>移除数组最后一个元素，并返回被移除的元素</td></tr> <tr><td>shift</td> <td>shift 移除第一个元素，并返回被移除的元素</td></tr> <tr><td>splice</td> <td>移除数组某个位置的元素，可以移除多个，并可以加替补元素</td></tr> <tr><td>slice</td> <td>slice （顾头不顾尾）切割数组，返回新数组，不改变原数组</td></tr> <tr><td>concat</td> <td>拼接数组，返回新数组，不改变原数组</td></tr> <tr><td>reverse</td> <td>数组反转，返回新数组，会改变原数组</td></tr> <tr><td>sort</td> <td>数组排序，返回新数组，会改变原数组</td></tr> <tr><td>join</td> <td>把数组用字符串拼接，返回拼接字符串，不影响原数组</td></tr> <tr><td>tostring</td> <td>把数组转出字符串</td></tr> <tr><td>indexof</td> <td>查询某个元素的索引，不存在返回-1</td></tr> <tr><td>lastindexof</td> <td>查询某个元素的最后一个索引位置</td></tr> <tr><td>forEach</td> <td>遍历数组，会遍历数组的每一个元素</td></tr> <tr><td>filter</td> <td>过滤数组，根据条件进行过滤，返回一个新数组，不影响原数组</td></tr> <tr><td>map</td> <td>根据原数组，返回一个新数组，此数组结构发生改变</td></tr> <tr><td>some</td> <td>用户查询数组中是否符合条件的元素，如果有返回true，没有返回false</td></tr> <tr><td>find</td> <td>find 查找符合条件的某个元素，返回该元素对象</td></tr> <tr><td>findindex</td> <td>find 查找符合条件的某个元素，返回该元素下标</td></tr></tbody></table> <p><b>基础方法</b></p> <p>1、push 往数组最后一个位置追加元素</p> <div class="language- extra-class"><pre class="language-text"><code> var arr = [1,2,3,4,5,6]
+ arr.push(7)
+ console.log(arr)
+</code></pre></div><p>2、unshift 往数组第一个位置追加元素</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [1,2,3,4,5,6]
+arr.unshift(0)
+console.log(arr)
+</code></pre></div><p>3、pop移除数组最后一个元素，并返回被移除的元素</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [1,2,3,4,5,6]
+var res = arr.pop()
+console.log(arr)
+console.log(res)
+</code></pre></div><p>4、shift 移除第一个元素，并返回被移除的元素</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5, 6]
+var res = arr.shift()
+console.log(arr)
+console.log(res)
+</code></pre></div><p>5、splice 移除数组某个位置的元素，可以移除多个，并可以加参数3替补元素</p> <div class="language- extra-class"><pre><code> 参数1 表示开始删除的索引
+
+ 参数2 表示删除的个数
+
+ 参数3或4或5等等 表示要替补的元素
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>var arr = [1,2,3,4,5,6]
+arr.splice(1,1,666)
+console.log(arr)
+</code></pre></div><p>6、slice （顾头不顾尾）切割数组，返回新数组，不改变原数组</p> <div class="language- extra-class"><pre><code>参数1 表示切割开始的索引
+
+参数2 表示切割结束的索引
+</code></pre></div><p>注：如果只传一个参数的话，表示从这个索引位置切割到最后一个</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a','b','c','d','e','f']
+var res = arr.slice(0,5)
+console.log(arr)
+console.log(res)
+</code></pre></div><p>7、concat 拼接数组，返回新数组，不改变原数组</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a', 'b', 'c', 'd', 'e', 'f']
+var res1 = arr.concat(1,2,3)
+// 或者
+var res2 = arr.concat([1,2,3])
+console.log(arr)
+console.log(res1)
+console.log(res2)
+</code></pre></div><p>8、reverse 数组反转，返回新数组，会改变原数组</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a', 'b', 'c', 'd', 'e', 'f']
+var res = arr.reverse()
+console.log(arr)
+console.log(res)
+</code></pre></div><p>9、sort 数组排序，返回新数组，会改变原数组</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [5,2,3,7,5,9]
+var res = arr.sort()
+console.log(arr)
+console.log(res)
+</code></pre></div><p>10、join 把数组用字符串拼接，返回拼接字符串，不影响原数组</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a', 'b','c', 'd', 'e', 'f']
+var res = arr.join('-')
+console.log(arr)
+console.log(res)
+</code></pre></div><p>11、tostring 把数组转出字符串</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a', 'b','c', 'd', 'e', 'f']
+var res = arr.toString()
+console.log(res)
+</code></pre></div><p>12、indexof 查询某个元素的索引，不存在返回-1（可以利用这个特性判断元素是否存在数组）</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a', 'b','c', 'd', 'e', 'f']
+var res1 = arr.indexOf('c')
+var res2 = arr.indexOf('隔壁老陈')
+console.log(res1)
+console.log(res2)
+</code></pre></div><p>13、lastindexof 查询某个元素的最后一个索引位置</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = ['a', 'a','b','c', 'd', 'e', 'f']
+var res = arr.lastIndexOf('a')
+console.log(res)
+</code></pre></div><p><b>进阶方法</b></p> <p>1、forEach 遍历数组，会遍历数组的每一个元素</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [{
+id: 1,
+name: '张三',
+job: '法外狂徒'
+},
+{
+id: 2,
+name: '李四',
+job: '电玩小子'
+},
+{
+id: 3,
+name: '王五',
+job: '隔壁老王'
+}]
+arr.forEach(item =&gt; {console.log(item.job)})
+</code></pre></div><p>2、filter 过滤数组，根据条件进行过滤，返回一个新数组，不影响原数组</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [{
+id: 1,
+name: '张三',
+job: '法外狂徒'
+},
+{
+id: 2,
+name: '李四',
+job: '电玩小子'
+},
+{
+id: 3,
+name: '王五',
+job: '隔壁老王'
+}]
+var res = arr.filter(item =&gt; {
+return item.name === '张三'
+})
+console.log(res)
+</code></pre></div><p>3、map 根据原数组，返回一个新数组，此数组结构发生改变</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [{
+id: 1,
+name: '张三',
+job: '法外狂徒'
+},
+{
+id: 2,
+name: '李四',
+job: '电玩小子'
+},
+{
+id: 3,
+name: '王五',
+job: '隔壁老王'
+}]
+var res = arr.map(item =&gt; {
+return item.name
+})
+</code></pre></div><p>4、some 用户查询数组中是否符合条件的元素，如果有返回true，没有返回false</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [{
+id: 1,
+name: '张三',
+job: '法外狂徒'
+},
+{
+id: 2,
+name: '李四',
+job: '电玩小子'
+},
+{
+id: 3,
+name: '王五',
+job: '隔壁老王'
+}]
+var res1 = arr.some(item =&gt; {
+return item.id===2
+})
+var res2 = arr.some(item =&gt; {
+return item.id===11
+})
+console.log(res1)
+console.log(res2)
+</code></pre></div><p>5、find 查找符合条件的某个元素，返回该元素对象</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [{
+id: 1,
+name: '张三',
+job: '法外狂徒'
+},
+{
+id: 2,
+name: '李四',
+job: '电玩小子'
+},
+{
+id: 3,
+name: '王五',
+job: '隔壁老王'
+}]
+var res = arr.find( item =&gt;{
+return item.name = '张三'
+})
+console.log(res)
+</code></pre></div><h2 id="内置对象"><a href="#内置对象" class="header-anchor">#</a> 内置对象</h2> <p> JavaScript中，常用的内置对象有3种；</p> <p>分别是<code>字符串对象：String</code>、<code>日期对象：Date</code>和<code>数值对象：Math</code>。</p> <h3 id="_1-字符串对象-string"><a href="#_1-字符串对象-string" class="header-anchor">#</a> （1）字符串对象：String</h3> <p>1、使用length属性来获取字符串的长度。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>字符串名.length
+</code></pre></div><p>2、 使用<b>toLowerCase()</b>方法将大写字符串转化为小写字符串，</p> <p>也可以使用<b>toUpperCase()</b>方法将小写字符串转化为大写字符串。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>字符串名.toLowerCase()
+字符串名.toUpperCase()
+</code></pre></div><p>3、使用charAt()方法来获取字符串中的某一个字符。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>字符串名.charAt(n)
+</code></pre></div><p>说明：字符串下标是从零开始的，用n来表示， n是整数，表示字符串中第n+1个字符。</p> <p>4、使用substring()方法来截取字符串的某一部分。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>字符串名.substring(start, end)
+</code></pre></div><p>说明：start表示开始位置，end表示结束位置。start和end都是整数，一般都是从0开始，其中end大于start。</p> <p>5、使用replace()方法来用一个字符串替换另外一个字符串的某一部分。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>字符串名.replace(原字符串, 替换字符串)
+字符串名.replace(正则表达式, 替换字符串)
+</code></pre></div><p>6、使用split()方法把一个字符串分割成一个数组，这个数组存放的是原来字符串的所有字符片段。有多少个片段，数组元素个数就是多少。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>字符串名.split(&quot;分割符&quot;)
+</code></pre></div><p>7、使用indexOf()方法来找出“某个指定字符串”在字符串中首次出现的下标位置，也可以使用lastIndexOf()来找出“某个指定字符串”在字符串中最后出现的下标位置。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>字符串名.indexOf(指定字符串)
+字符串名.lastIndexOf(指定字符串)
+</code></pre></div><p>说明：如果字符串中包含“指定字符串”，indexOf()就会返回指定字符串首次出现的下标，</p> <p>而lastIndexOf()就会返回指定字符串最后出现的下标；</p> <p>如果字符串中不包含“指定字符串”，indexOf()或lastIndexOf()就会返回-1。</p> <h3 id="_2-日期对象-date"><a href="#_2-日期对象-date" class="header-anchor">#</a> （2）日期对象：Date</h3> <p>  在JavaScript中，我们可以使用时间对象Date来处理时间。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>var 日期对象名 = new Date();
+</code></pre></div><p>  创建一个日期对象，必须使用new关键字。其中Date对象的方法有很多，主要分为两大类：getXxx()和setXxx()。getXxx()用于获取时间，setXxx()用于设置时间。</p> <p>用于获取时间的getXxx()</p> <table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>getFullYear()</td> <td>获取年份，取值为4位数字</td></tr> <tr><td>getMonth()</td> <td>获取月份，取值为0（一月）到11（十二月）之间的整数</td></tr> <tr><td>getDay()</td> <td>获取星期，取值为1~7之间的整数</td></tr> <tr><td>getDate()</td> <td>获取日数，取值为1~31之间的整数</td></tr> <tr><td>getHours()</td> <td>获取小时数，取值为0~23之间的整数</td></tr> <tr><td>getMinutes()</td> <td>获取分钟数，取值为0~59之间的整数</td></tr> <tr><td>getSeconds()</td> <td>获取秒数，取值为0~59之间的整数</td></tr></tbody></table> <blockquote><p>tips：getMonth()方法返回值是0（一月）到11（十二月）之间的整数，所以必须加上1，这样月份才正确。<br>
+获取当前的“日”，不是使用getDay()，而是使用getDate();getDay()是获取星期的。</p></blockquote> <p>用于设置时间的setXxx()</p> <table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>setFullYear()</td> <td>设置年、月、日</td></tr> <tr><td>setMonth()</td> <td>设置月、日</td></tr> <tr><td>setDate()</td> <td>设置日</td></tr> <tr><td>setHours()</td> <td>设置时、分、秒、毫秒</td></tr> <tr><td>setMinutes()</td> <td>设置分、秒、毫秒</td></tr> <tr><td>setSeconds()</td> <td>设置秒、毫秒</td></tr></tbody></table> <blockquote><p>tips： getFullYear()只能获取年，但setFullYear()却可以同时设置年、月、日。同理，setMonth()和setDate()也有这个特点。</p></blockquote> <h3 id="_3-数学对象-math"><a href="#_3-数学对象-math" class="header-anchor">#</a> （3）数学对象：Math</h3> <p>  Math对象跟其他对象不一样，我们不需要使用new关键字来创造，而是直接使用它的属性和方法就行。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>Math.属性
+Math.方法
+</code></pre></div><p>常见Math对象的属性如下表：</p> <table><thead><tr><th>属性</th> <th>说明</th> <th>对应的数学形式</th></tr></thead> <tbody><tr><td>PI</td> <td>圆周率	π</td> <td></td></tr> <tr><td>LN2</td> <td>2的自然对数</td> <td>ln(2)</td></tr> <tr><td>LN10</td> <td>10的自然对数</td> <td>ln(10)</td></tr> <tr><td>LOG2E</td> <td>以2为底的e的对数</td> <td>log2e</td></tr> <tr><td>LOG10E</td> <td>以10为底的e的对数</td> <td>log10e</td></tr> <tr><td>SQRT2</td> <td>2的平方根</td> <td>√2</td></tr> <tr><td>SQRT1_2</td> <td>2的平方根的倒数</td> <td>1/√2</td></tr></tbody></table> <p>例子：</p> <div class="language- extra-class"><pre><code>120*Math.PI/180   //120°
+</code></pre></div><p>常用Math对象的方法如下表：</p> <table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>max(a,b,…,n)</td> <td>返回一组数中的最大值</td></tr> <tr><td>min(a,b,…,n)</td> <td>返回一组数中的最小值</td></tr> <tr><td>sin(x)</td> <td>正弦</td></tr> <tr><td>cos(x)</td> <td>余弦</td></tr> <tr><td>tan(x)</td> <td>正切</td></tr> <tr><td>asin(x)</td> <td>反正弦</td></tr> <tr><td>acos(x)</td> <td>反余弦</td></tr> <tr><td>atan(x)</td> <td>反正切</td></tr> <tr><td>atan2(y, x)</td> <td>反正切（注意y、x顺序）</td></tr> <tr><td>floor(x)</td> <td>向下取整</td></tr> <tr><td>ceil(x)</td> <td>向上取整</td></tr> <tr><td>random()</td> <td>生成随机数</td></tr> <tr><td>abs(x)</td> <td>返回x的绝对值</td></tr> <tr><td>sqrt(x)</td> <td>返回x的平方根</td></tr></tbody></table> <p>常见例子：</p> <p>1、生成0~m之间的随机数</p> <div class="language- extra-class"><pre><code>Math.random()*m
+</code></pre></div><p>2、生成0到m之间的随机整数</p> <div class="language- extra-class"><pre><code>Math.floor(Math.random()*(m+1))
+</code></pre></div><p>3、生成n到m之间的随机整数（包括n和m）</p> <div class="language- extra-class"><pre><code>Math.floor(Math.random()*(m-n+1))+n
+</code></pre></div><h2 id="dom篇"><a href="#dom篇" class="header-anchor">#</a> DOM篇</h2> <p>  DOM，全称“Document Object Model（文档对象模型）”，它是由W3C定义的一个标准。简单总结就是：DOM操作，可以简单理解成“元素操作”。</p> <p>  DOM节点共有12种类型，常见的只有3种：</p> <p>（1）元素节点</p> <p>（2）属性节点</p> <p>（3）文本节点</p> <p> 我们可以使用nodeType属性来判断一个节点的类型。例如：元素节点的nodeType为<code>1</code>,属性节点的nodeType为<code>2</code>,
+文本节点的nodeType为<code>3</code>。</p> <blockquote><p>tips:<br>（1）一个元素就是一个节点，这个节点称之为“元素节点”。<br>
+（2）属性节点和文本节点看起来像是元素节点的一部分，但实际上，它们是独立的节点，并不属于元素节点。<br>
+（3）只有元素节点才可以拥有子节点，属性节点和文本节点都无法拥有子节点。</p></blockquote> <p>一、<b>DOM主要元素操作有：</b>获取元素，创建元素、插入元素、删除元素、复制元素和替换元素。</p> <p>1、获取元素；准确来说，就是获取“元素节点。</p> <p>常用的获取方式如下：</p> <table><thead><tr><th>方式</th> <th>说明</th></tr></thead> <tbody><tr><td>document.getElementById(&quot;id名&quot;)</td> <td>通过id来选中元素</td></tr> <tr><td>document. getElementsByTagName(&quot;标签名&quot;)</td> <td>通过标签名来选中元素；getElementsByTagName()方法中“elements”是一个复数，写的时候别漏掉了“s”。这是因为getElementsByTagName()获取的是多个元素（即集合），而getElementById()获取的仅仅是一个元素。</td></tr> <tr><td>document. getElementsByClassName(&quot;类名&quot;)</td> <td>通过class来选中元素；getElementsByClassName()方法中“elements”是一个复数，跟getElementsByTagName相似，getElementsByClassName()获取的也是一个类数组。</td></tr> <tr><td>document.querySelector(&quot;选择器&quot;)</td> <td>表示选取满足选择条件的第1个元素</td></tr> <tr><td>document.querySelectorAll(&quot;选择器&quot;)</td> <td>表示选取满足条件的所有元素</td></tr> <tr><td>document.getElementsByName(&quot;name名&quot;)</td> <td>通过name属性来获取表单元素</td></tr></tbody></table> <p>2、创建元素</p> <p>  在JavaScript中，我们使用createElement()来创建一个元素节点，也可以使用createTextNode()来创建一个文本节点，然后可以将元素节点与文本节点“组装”成为我们平常所看到的“有文本内容的元素”。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>var e1 = document.createElement(&quot;元素名&quot;);      //创建元素节点
+var txt = document.createTextNode(&quot;文本内容&quot;);   //创建文本节点
+e1.appendChild(txt);                          //把文本节点插入元素节点中
+e2.appendChild(e1);                          //把组装好的元素插入已存在的元素中
+</code></pre></div><p>步骤：</p> <p>① 创建元素节点：createElement()</p> <p>② 创建文本节点：createTextNode()</p> <p>③ 把文本节点插入元素节点：appendChild()</p> <p>④ 把组装好的元素插入到已有元素中：appendChild()</p> <p>元素插入方式：</p> <table><thead><tr><th>方式</th> <th>说明</th></tr></thead> <tbody><tr><td>appendChild()</td> <td>把一个新元素插入到父元素的内部子元素的 末尾</td></tr> <tr><td>insertBefore()</td> <td>将一个新元素插入到父元素中的某一个子元素“之前”</td></tr></tbody></table> <p>3、 删除元素；
+使用removeChild()方法来删除父元素下的某个子元素。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>var e1 = document.getElementById(&quot;id名&quot;);
+document.body.removeChild(e1)
+</code></pre></div><p>4、复制元素；使用cloneNode()方法来实现复制元素。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>ele.cloneNode()//参数ele表示被复制的元素
+</code></pre></div><p>5、替换元素；使用replaceChild()方法来实现替换元素。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>f.replaceChild(new,old);//f表示父元素，new表示新子元素，old表示旧子元素。
+</code></pre></div><p>二、<b>DOM主要属性操作（对象方法）有：</b></p> <table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>getAttribute()</td> <td>获取元素的某个属性的值</td></tr> <tr><td>setAttribute()</td> <td>设置元素的某个属性的值</td></tr> <tr><td>removeAttribute()</td> <td>删除元素的某个属性</td></tr> <tr><td>hasAttribute()</td> <td>判断元素是否含有某个属性</td></tr></tbody></table> <p>1、getAttribute()方法来获取元素的某个属性的值。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>ele.getAttribute(&quot;attr&quot;)//ele是元素名，attr是属性名
+</code></pre></div><p>tips :ele.attr也可以获取到attr的值，等价于ele.getAttribute(&quot;attr&quot;)，但针对自定义的属性，就无法通过ele.attr获取，只能通过ele.getAttribute(&quot;attr&quot;)。</p> <p> 例子：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;script&gt;
+        window.onload = function () 
+        {
+            var oBtn = document.getElementById(&quot;btn&quot;);
+            oBtn.onclick = function () 
+            {
+                //alert(oBtn.data);//undefined
+                alert(oBtn.getAttribute(&quot;data&quot;));//JavaScript
+            };
+        }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;input id=&quot;btn&quot; type=&quot;button&quot; value=&quot;获取&quot; data=&quot;JavaScript&quot;/&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre></div><p>2、setAttribute()方法来设置元素的某个属性的值。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>ele.setAttribute(&quot;attr&quot;,&quot;值&quot;)//ele是元素名，attr是属性名
+</code></pre></div><p>3、removeAttribute()方法来删除元素的某个属性。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>ele.removeAttribute(&quot;attr&quot;)
+</code></pre></div><p>4、hasAttribute()方法来判断元素是否含有某个属性。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>ele.hasAttribute(&quot;attr&quot;)
+</code></pre></div><p>tips：hasAttribute()方法返回一个布尔值，如果包含该属性，则返回true。</p> <p>三、<b>设置CSS（style）属性值</b></p> <p>  使用style对象来设置一个CSS属性的值，其实就是在元素的style属性来添加样式，这个设置的是“行内样式”。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>DOM对象.style.css属性名 = &quot;值&quot;;
+</code></pre></div><p>说明：DOM对象指通过document获取的对象，例如： var test = document.getElementById(&quot;id名&quot;);</p> <p>css属性名，如：width、height、background-color.....等等。</p> <p>四、<b>DOM遍历</b></p> <p>  DOM遍历，可以简单理解为“查找元素”。举个例子，如果你使用getElementById()等方法获取一个元素，然后又想得到该元素的父元素、子元素，甚至是下一个兄弟元素，这就是DOM遍历。</p> <p>对于DOM遍历，可以分为以下3种情况:</p> <table><thead><tr><th>语法</th> <th>说明</th></tr></thead> <tbody><tr><td>DOM对象.parentNode</td> <td>获得某个元素的父元素</td></tr> <tr><td>DOM对象.childNodes</td> <td>获得父元素中的所有子元素</td></tr> <tr><td>DOM对象 .previousSibling</td> <td>获得兄弟元素</td></tr></tbody></table> <p>五、<b> innerHTML和innerText</b></p> <p>  innerHTML获取的是元素内部所有的内容，而innerText获取的仅仅是文本内容。</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>DOM对象.innerHTML=新的HTML;
+DOM对象.innerHTML=&quot;新文本&quot;;
+DOM对象.innerText=&quot;新文本&quot;;
+</code></pre></div><h2 id="bom篇"><a href="#bom篇" class="header-anchor">#</a> BOM篇</h2> <p>  BOM 全称：Browser Object Model, 浏览器对象模型。</p> <p>BOM主要如下：</p> <table><thead><tr><th>属性</th> <th>说明</th></tr></thead> <tbody><tr><td>window对象</td> <td>js中的顶级对象，所有定义在全局作用域中的变量、函数都会变成window对象的属性和方法，在调用的时候可以省略window。</td></tr> <tr><td>frames</td> <td>如果页面中包含框架，则每个框架都拥有自己的 window 对象，并且保存在 frames 集合中。</td></tr> <tr><td>location对象</td> <td>保存当前文档信息，将URL解析为独立片段</td></tr> <tr><td>screen对象</td> <td>存放着有关显示浏览器屏幕的信息</td></tr> <tr><td>navigator对象</td> <td>navigator对象就是判断用户的浏览器以及操作系统</td></tr> <tr><td>history对象</td> <td>保存浏览器的历史记录</td></tr></tbody></table> <p>1、window对象</p> <p>（1）window对象下的子对象</p> <table><thead><tr><th>window子对象</th> <th>说明</th></tr></thead> <tbody><tr><td>window.open()</td> <td>打开新窗口</td></tr> <tr><td>window.close()</td> <td>关闭当前窗口</td></tr> <tr><td>window.moveTo()</td> <td>移动当前窗口</td></tr> <tr><td>window.resizeTo()</td> <td>调整当前窗口的尺寸</td></tr> <tr><td>window.onload()</td> <td>当页面加载时</td></tr> <tr><td>window.onscroll()</td> <td>当页面滚动时</td></tr> <tr><td>window.onresize()</td> <td>页面重新定义大小时</td></tr></tbody></table> <p>（2）window对象常用方法（一般会省略window）</p> <table><thead><tr><th>方法</th> <th>说明</th></tr></thead> <tbody><tr><td>alert()</td> <td>提示对话框</td></tr> <tr><td>confirm()</td> <td>判断对话框</td></tr> <tr><td>prompt()</td> <td>输入对话框</td></tr> <tr><td>open()</td> <td>打开窗口</td></tr> <tr><td>close()</td> <td>关闭窗口</td></tr> <tr><td>setTimeout()</td> <td>开启“一次性”定时器</td></tr> <tr><td>clearTimeout()</td> <td>关闭“一次性”定时器</td></tr> <tr><td>setInterval()</td> <td>开启“重复性”定时器</td></tr> <tr><td>clearInterval()</td> <td>关闭“重复性”定时器</td></tr></tbody></table> <p>2、frames</p> <p>  在 frames 集合中，可以通过数值索引（从0开始，从左至右，从上到下）或者框架名称来访问相应的 window 对象。</p> <p>例子：</p> <p>每个 window 对象都有一个 name 属性，其中包含框架的名称。</p> <div class="language-coffeescript extra-class"><pre class="language-coffeescript"><code><span class="token operator">&lt;</span>frameset<span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>frame src<span class="token operator">=</span><span class="token string">&quot;frame.htm&quot;</span> name<span class="token operator">=</span><span class="token string">&quot;topFrame&quot;</span><span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>frameset cols<span class="token operator">=</span><span class="token string">&quot;50%,50%&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>frame src<span class="token operator">=</span><span class="token string">&quot;a&quot;</span> name<span class="token operator">=</span><span class="token string">&quot;leftFrame&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>frame src<span class="token operator">=</span><span class="token string">&quot;b&quot;</span> name<span class="token operator">=</span><span class="token string">&quot;rightFrame&quot;</span><span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span><span class="token operator">/</span>frameset<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>frameset<span class="token operator">&gt;</span>
+</code></pre></div><p>说明：可以通过 window.frames[0] 或者 window.frames[&quot;topFrame&quot;] 来引用上方的框架。</p> <p>3、location对象</p> <table><thead><tr><th>location的属性</th> <th>说明</th></tr></thead> <tbody><tr><td>location.href</td> <td>返回当前页面完整的URL ,修改这个属性，即跳转新页面</td></tr> <tr><td>location.hash</td> <td>返回URL中的hash（#号后跟零或多个字符）</td></tr> <tr><td>location.host</td> <td>返回服务器名称和端口号</td></tr> <tr><td>location.port</td> <td>返回服务器端口号</td></tr> <tr><td>location.pathname</td> <td>返回URL中的目录和文件名</td></tr> <tr><td>location.hostname</td> <td>返回不带端口号的服务器名称</td></tr> <tr><td>location.protocol</td> <td>返回页面使用的协议（http://或https://)</td></tr> <tr><td>location.search</td> <td>返回URL的查询字符串，字符串以问号开头</td></tr></tbody></table> <p>4、screen对象</p> <table><thead><tr><th>screen的属性</th> <th>说明</th></tr></thead> <tbody><tr><td>screen.width</td> <td>屏幕宽度，以像素为单位</td></tr> <tr><td>screen.availWidth</td> <td>屏幕的可用宽度，以像素为单位</td></tr> <tr><td>screen.height</td> <td>屏幕高度，以像素为单位</td></tr></tbody></table> <p>5、navigator对象</p> <table><thead><tr><th>navigator的属性</th> <th>说明</th></tr></thead> <tbody><tr><td>navigator.appName</td> <td>浏览器名称</td></tr> <tr><td>navigator.appVersion</td> <td>浏览器版本</td></tr> <tr><td>navigator.language</td> <td>浏览器设置的语言</td></tr> <tr><td>navigator.platform</td> <td>操作系统类型</td></tr> <tr><td>navigator.userAgent</td> <td>浏览器设定的User-Agent字符串</td></tr> <tr><td>window.navigator.online</td> <td>是否联网</td></tr></tbody></table> <p>6、history对象</p> <table><thead><tr><th>history的属性</th> <th>说明</th></tr></thead> <tbody><tr><td>history.back()</td> <td>与在浏览器点击后退按钮相同</td></tr> <tr><td>history.forward()</td> <td>与在浏览器中点击按钮向前相同</td></tr> <tr><td>history.go(参数)</td> <td>前进后退功能，参数如果是1前进一个页面，如果是-1后退一个页面，如果是N则前进或后退N个页面</td></tr> <tr><td>history.length()</td> <td>保存历史记录的数量</td></tr></tbody></table> <h2 id="事件处理"><a href="#事件处理" class="header-anchor">#</a> 事件处理</h2> <p>  事件一般是用户对页面的一些“小动作”引起的，例如按下鼠标、移动鼠标等，这些都会触发相应的一个事件。</p> <p>一、<b>JavaScript常见的事件共有以下5种。</b></p> <p>（1）鼠标事件</p> <table><thead><tr><th>事件</th> <th>说明</th></tr></thead> <tbody><tr><td>onclick</td> <td>鼠标单击事件</td></tr> <tr><td>onmouseover</td> <td>鼠标移入事件</td></tr> <tr><td>onmouseout</td> <td>鼠标移出事件</td></tr> <tr><td>onmousedown</td> <td>鼠标按下事件</td></tr> <tr><td>onmouseup</td> <td>鼠标松开事件</td></tr> <tr><td>onmousemove</td> <td>鼠标移动事件</td></tr></tbody></table> <p>（2）键盘事件</p> <table><thead><tr><th>事件</th> <th>说明</th></tr></thead> <tbody><tr><td>onkeydown</td> <td>键盘按下</td></tr> <tr><td>onkeyup</td> <td>键盘松开</td></tr></tbody></table> <p>（3）表单事件</p> <table><thead><tr><th>事件</th> <th>说明</th></tr></thead> <tbody><tr><td>onfocus/onblur</td> <td>获取焦点时触发的事件/失去焦点时触发的事件</td></tr> <tr><td>onselect</td> <td>选中“单行文本框”或“多行文本框”中的内容时触发</td></tr> <tr><td>onchange</td> <td>当value改变时触发</td></tr> <tr><td>onsubmit</td> <td>表单提交时触发</td></tr></tbody></table> <p>（4）编辑事件</p> <table><thead><tr><th>事件</th> <th>说明</th></tr></thead> <tbody><tr><td>oncopy</td> <td>用来防止页面内容被复制</td></tr> <tr><td>onselectstart</td> <td>用来防止页面内容被选取</td></tr> <tr><td>oncontextmenu</td> <td>用来禁止鼠标右键</td></tr></tbody></table> <p>（5）页面事件</p> <table><thead><tr><th>事件</th> <th>说明</th></tr></thead> <tbody><tr><td>onload</td> <td>表示文档加载完成后再执行的一个事件</td></tr> <tr><td>onbeforeunload</td> <td>表示离开页面之前触发的一个事件</td></tr></tbody></table> <blockquote><p>tips:页面时间是通过windo来调用的，例如： <code>window.onload = function (){.....}</code></p></blockquote> <p><b>在JavaScript中，调用事件的方式有两种:</b></p> <p>1、在script标签中调用</p> <p> 语法：</p> <div class="language- extra-class"><pre class="language-text"><code>DOM对象.事件名 = function()
+{
+    ……
+};
+</code></pre></div><p>2、在元素中调用</p> <p> 例子：</p> <div class="language- extra-class"><pre><code> &lt;input type=&quot;button&quot; onclick=&quot;alert('隔壁老陈')&quot; value=&quot;弹窗&quot; /&gt;
+</code></pre></div><p>二、<b>事件监听器【addEventListener()】</b></p> <p>1、绑定事件</p> <p> 通过addEventListener()方法来为一个元素添加事件，称之为“绑定事件”。</p> <p> 语法：</p> <div class="language- extra-class"><pre><code>DOM对象.addEventListener(type , fn , false)
+</code></pre></div><blockquote><p>说明：<br>
+ type是一个字符串，指的是事件类型。例如单击事件用click，鼠标移入用mouseover等。一定要注意，这个事件类型是不需要加上“on”前缀的。<br>
+ fn是一个函数名，或者一个匿名函数。<br>
+ false表示事件冒泡阶段调用。</p></blockquote> <p>例子：</p> <div class="language- extra-class"><pre><code>DOM对象.addEventListener(&quot;click&quot;, function () {.....}, false);
+</code></pre></div><p>2、event对；每一个事件，都有一个对应的event对象</p> <p>例如：</p> <div class="language- extra-class"><pre class="language-text"><code>DOM对象.addEventListener(&quot;click&quot;, function (event)
+ {alert(event.type);}, false);
+</code></pre></div><p>event对象的属性:</p> <table><thead><tr><th>属性</th> <th>说明</th></tr></thead> <tbody><tr><td>type</td> <td>事件类型</td></tr> <tr><td>keyCode</td> <td>键码值</td></tr> <tr><td>shiftKey</td> <td>是否按下shift键</td></tr> <tr><td>ctrlKey</td> <td>是否按下Ctrl键</td></tr> <tr><td>altKey</td> <td>是否按下Alt键</td></tr></tbody></table> <h2 id="this指向"><a href="#this指向" class="header-anchor">#</a> this指向</h2> <p>  this指向;简单来说:哪个DOM对象（元素节点）调用了this所在的函数，那么this指向的就是哪个DOM对象。</p> <p>1、在函数体中，非显式或隐式地简单调用函数时，在严格模式下，函数内的 this 会被绑定到
+undefined 上，在非严格模式下则会被绑定到全局对象 window/global 上 。</p> <p>2、一般使用 new 方法调用构造函数时，构造函数内的 this 会被绑定到新创建的对象上 。</p> <p>3、一般通过 call/apply/bind 方法显式调用函数时，函数体内的this会被绑定到指定参数的对象
+上 。</p> <p>4、一般通过上下文对象调用函数时，函数体内的this会被绑定到该对象上 。</p> <p>5、在箭头函数中， this 的指向是由外层（函数或全局）作用域来决定的 。</p> <h2 id="拓展建议"><a href="#拓展建议" class="header-anchor">#</a> 拓展建议</h2> <p>  ES6是 JavaScript 语言的下一代标准; <b>非常重要</b>，前端必学。</p> <p>ES6重点简单概括：</p> <div class="language- extra-class"><pre class="language-text"><code>箭头函数()=&gt;{}、拓展运算符...、模板字符串`${}`、结构赋值、promise...等等
+</code></pre></div><ul><li><a href="https://wangdoc.com/es6/intro.html" target="_blank" rel="noopener noreferrer">ES6教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://v2.cn.vuejs.org/v2/guide" target="_blank" rel="noopener noreferrer">Vue教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://react.docschina.org/tutorial/tutorial.html" target="_blank" rel="noopener noreferrer">React教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <blockquote><p>笔记小结语：我是隔壁老陈(微信:<code>CYJ138G</code>)，一个正在学习前端的小菜鸟，此笔记大部分从教程或者个人总结而来；可能存在知识点错误或者未完善的地方、希望大家能帮忙多修正和完善。后续可能会更新vue和react笔记。
+也希望大家能分享一下学习经验和心得，让我少走点弯路；谢谢。在此：祝大家前程似锦、未来熠熠生辉。</p></blockquote></div></div> <!----> <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=JavaScript" title="标签">#JavaScript</a></div> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/c049ff/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">CSS3简介</div></a> <a href="/pages/30f9ae/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">ES6简介</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/c049ff/" class="prev">CSS3简介</a></span> <span class="next"><a href="/pages/30f9ae/">ES6简介</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/30f9ae/"><div>
+            ES6
+            <!----></div></a> <span class="date">09-21</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/e21228/"><div>
+            每日一遍，防止颓废
+            <!----></div></a> <span class="date">09-20</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/345936/"><div>
+            Git
+            <!----></div></a> <span class="date">09-16</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> <a href="http://www.weblearn.fit/AAA/about/" target="_blank" title="博主主页"><strong style="color: #54be8f">❤关于博主❤</strong></a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-77a386c7-85ab-48f7-a40b-25c397281820/44d885a5-fe57-4962-8021-65fe40a1b848.MP3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://assets.smallsunnyfox.com/music/2.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://assets.smallsunnyfox.com/music/2.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>花海</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>周杰伦</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="Ribbon"></canvas><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.0659193c.js" defer></script><script src="/assets/js/2.defd1617.js" defer></script><script src="/assets/js/25.d7014b52.js" defer></script>
+  </body>
+</html>
